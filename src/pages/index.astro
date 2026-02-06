@@ -24,6 +24,11 @@ import Footer from "../components/Footer.astro";
 			name="description"
 			content="Strategica impulsa la eficiencia hospitalaria con Overmind-Flow, software inteligente para la gestión de pacientes y optimización de recursos clínicos en Chile."
 		/>
+		<meta
+			name="keywords"
+			content="Strategica, Overmind-Flow, Aníbal Licán, Gestión de Camas Hospitalarias, Innovación Salud Chile"
+		/>
+		<link rel="canonical" href="https://strategica.cl/" />
 
 		<!-- OpenGraph -->
 		<meta
@@ -56,6 +61,41 @@ import Footer from "../components/Footer.astro";
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
 			rel="stylesheet"
 		/>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@graph": [
+					{
+						"@type": "Organization",
+						"name": "Strategica",
+						"url": "https://strategica.cl",
+						"logo": "https://strategica.cl/Logo_strategica.jpg",
+						"description": "Innovación y Gestión en Salud Digital",
+						"founder": {
+							"@type": "Person",
+							"name": "Aníbal Licán"
+						},
+						"sameAs": [
+							"https://www.linkedin.com/in/aníbal-licán-oyarzo",
+							"https://x.com/Anibal_Lican",
+							"https://www.youtube.com/@Aníbal_Licán"
+						]
+					},
+					{
+						"@type": "SoftwareApplication",
+						"name": "Overmind-Flow",
+						"applicationCategory": "HealthApplication",
+						"operatingSystem": "Web",
+						"offers": {
+							"@type": "Offer",
+							"price": "0",
+							"priceCurrency": "CLP"
+						},
+						"description": "Software inteligente para la gestión de pacientes y optimización de recursos clínicos."
+					}
+				]
+			}
+		</script>
 	</head>
 	<body class="bg-[#f5f5f7] text-[#1c4059] overflow-x-hidden antialiased">
 		<header>
